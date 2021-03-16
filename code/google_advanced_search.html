@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="page1style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="push_even_righter"></div>
+            <a class="a2" href="index.html">
+                <img src="google_grey.png" title="Google Search" class="nav_image">
+            </a>
+        </div>
+        <h1>Advanced Search</h1>        
+
+        <form id="adv_container" action="https://google.com/search">
+            <div style="flex-basis:230px">
+                <label class="advanced_form" style="font-size:23px">Find pages with...</label>
+                <br>
+                <br>
+                <br>
+                <label for="as_q" class="advanced_form">all these words:</label>
+                <br>
+                <br>
+                <br>
+                <label for="as_epq" class="advanced_form">this exact word or phrase:</label>
+                <br>
+                <br>
+                <br>
+                <label for="as_oq" class="advanced_form">any of these words:</label>
+                <br>
+                <br>
+                <br>
+                <label for="as_eq" class="advanced_form">none of these words:</label>
+                <br>
+                <br>
+                <br>
+            </div>
+            
+            <div style="flex-basis:400px">
+                <br>
+                <br>
+                <br>
+                
+                <input type="text" name="as_q" id="as_q" class="adv_inputs" style="margin-bottom: 15px;">
+                <br>
+                <input type="text" name="as_epq" id="as_epq" class="adv_inputs" style="margin-bottom: 20px;">
+                <br>
+                <input type="text" name="as_oq" id="as_oq" class="adv_inputs">
+                <br>
+                <input type="text" name="as_eq" id="as_eq" class="adv_inputs">
+            </div>
+            
+            <div style="flex-basis:405px">
+                <div class="explanation" style="font-weight: 600; font-size:20px; margin-bottom: 5px;">To do this in the search box.</div>
+                <br>
+                <br>
+                
+                <div class="explanation">Type the important words: tri-colour rat terrier</div>
+                <br>
+                <br>
+                
+                <div class="explanation" style="margin-bottom: 0px;">Put exact words in quotes: "rat terrier"</div>
+                <br>
+                <br>
+
+                <div class="explanation" style="margin-bottom: 5px;">Type OR between all the words you want: miniature OR standard</div>
+                <br>
+                
+                <div class="explanation">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+            </div>
+            
+            <div class="push_right"></div>
+
+            <div><input type="submit" value="Advanced Search" class="button2"></div>
+
+        </form>
+            
+
+
+        
+    </body>
+</html>
