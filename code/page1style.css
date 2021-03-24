@@ -24,6 +24,7 @@ body {
     border-radius: 25px;
     border: 1px solid lightgrey;
     height:50px;
+    padding-right:2%;
 }
 .buttons-container {
     width: inherit;
@@ -92,7 +93,7 @@ body {
 }
 .nav_image {
     width:140px;
-    height: 55px;
+    height: 55px !important;
 }
 .main-image {
     margin-top: 115px;
