@@ -1,3 +1,4 @@
+/*general*/
 body {
     min-width: 300px;
 }
@@ -8,12 +9,18 @@ body {
 .flex-item {
     flex-grow: 1;
 }
+.flex-item-expand {
+    flex-basis: 100%;
+    height: min-content;
+}
 .center-content {
     justify-items: center;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+/* google-search and google-images styling */
 .mainform {
     text-align: center;
     width: inherit;
@@ -99,7 +106,24 @@ body {
     margin-top: 115px;
 }
 
-
+/* google advanced search styling */
+@media only screen and (max-width:1220px) {
+    .explanations-container {
+        display: none;
+    }
+    .advance-form-container {
+        flex-basis: 100%;
+    }
+}
+@media only screen and (min-width: 1220px) {
+    .explanations-container{
+        display: block;
+        margin-top: 25px;
+    }
+    .advance-form-container {
+        flex-basis: 700px;
+    }
+}
 .button2 {
     background-color: rgb(12, 114, 209);
     color: white;
@@ -109,76 +133,57 @@ body {
     border-radius: 3px;
     font-weight: 800;
     opacity: 0.95;
-    align-self: right;
+    align-self: right;   
+    margin-left:30px;
 }
-
 .button2:hover {
     opacity: 1;
 }
-
-
-
-.a2 {
-    margin-right: 10px;
-    text-align: left;
-    size: 5px;
-    border-radius: 10px;
-    right: 0;
-}
-
-#adv_container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
 h1 {
     color: rgba(238, 27, 27, 0.864);
     text-align: left;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-top: 60px;
     font-weight: 350;
-    padding-bottom: 30px;
     padding-left: 30px;
-    border-bottom: solid 1px lightgrey;
     font-size: 25px;
+    margin-bottom: 0;
 }
-
 h2 {
     color: black;
     font-weight: 100;
     text-align: left;
     margin-left:30px;
-    margin-top: 50px;
 }
-
-.advanced_form {
+.advanced-form-div {
     color: rgb(31, 30, 30);
-    position:left;
     font-size: 18px;
-    margin-left: 30px;
-    margin-bottom: 500px;
+    margin-left:30px;
+    margin-bottom: 5px;
+    width:150px;
 }
-
-.adv_inputs {
+.adv-inputs {
     padding:5px;
-    margin-left: 30px;
     margin-bottom: 20px;
     margin-right: 10px;
-    width: 600px;
+    margin-left:30px;
+    max-width: 700px;
     height: 25px;
     border: 1px solid lightgrey;
 }
-
 .adv_inputs:focus {
     outline: none;
     border: 1px solid rgb(0, 89, 255);
 }
-
+.explanation-title {
+    font-weight: 400;
+    font-size:20px; 
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
 .explanation {
     color: rgb(68, 62, 62);
     font-size: 15px;
     margin-left: 20px;
     text-align: left;
+    margin-bottom: 40px;
 }
-
