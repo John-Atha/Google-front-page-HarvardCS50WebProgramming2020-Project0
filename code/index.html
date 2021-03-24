@@ -5,25 +5,21 @@
         <link rel="stylesheet" href="page1style.css">
     </head>
     <body>
-        <div class="container">
-            <div class="push_righter"></div>
-            <a class="a2" href="google_images.html">
-                <img src="google_images_img2.png" title="Google Images" class="nav_image" style="height: 50px">
+        <div class="links-container flex-layout">
+            <a class="image-link-container flex-item" href="google_images.html">
+                <img src="google_images_img2.png" title="Google Images" class="nav_image">
             </a>
-            <a class="a2" href="google_advanced_search.html">
-                <img src="google_adv_img.png" title="Google Advanced Search" class="nav_image"style="height: 55px">
+            <a class="image-link-container flex-item" href="google_advanced_search.html">
+                <img src="google_adv_img.png" title="Google Advanced Search" class="nav_image">
             </a>
         </div>
-           
-        <img src="google_img.png" alt="google's image" class="center" id="main">
+        <img src="google_img.png" alt="google's image" class="center main-image" id="main">
         <form class="mainform" action="https://google.com/search">
-            <input type="search" title="Search" name="q" class="bar1" >
-            <br>
-            
-                <input type="submit" value="Google Search" class="button1">
-          
-                <input type="submit" value="I'm Feeling Lucky!" name="btnI" class="button1">
-            
+            <input type="search" title="Search" name="q" class="main-search-input" >
+            <div class="buttons-container flex-layout center-content">           
+                <input type="submit" value="Google Search" class="main-page-button">
+                <input type="submit" value="I'm Feeling Lucky!" name="btnI" class="main-page-button">
+            </div>
         </form>
     </body>
 </html>
